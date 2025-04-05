@@ -1,0 +1,173 @@
+/* Estilização geral */
+body {
+    background-color: #121212;
+    color: #E0E0E0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1E1E1E; 
+    border-bottom: 2px solid #333;
+}
+
+h1 {
+    color: #FFFFFF; 
+}
+
+header .title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Container para imagem e formulário */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden; 
+    display: table;
+}
+
+/* Ajuste da imagem para ficar à esquerda */
+.image-container {
+    display: table-cell;
+    width: 40%; 
+    vertical-align: middle;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Formulário ao lado da imagem */
+.form-container {
+    display: table-cell;
+    width: 55%; 
+    vertical-align: middle; 
+    padding-left: 260px; 
+}
+
+.descricao-formulario {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    
+}
+
+.form-container {
+    display: table-cell;
+    width: 55%;
+    vertical-align: middle;
+    padding-left: 280px;
+    text-align: left; /
+}
+
+.newItem {
+    background-color: #1E1E1E;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column; /* Faz os elementos ficarem empilhados */
+    align-items: flex-start; /* Alinha tudo à esquerda */
+}
+
+.newItem input, .newItem button {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.newItem button {
+    background-color: #70402d;
+    width: 75%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.newItem button:hover {
+    background-color: #a55520;
+}
+
+/* Botão de remover */
+.btn-remover {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-remover:hover {
+    background-color: #cc0000;
+}
+
+/* Tabela de exercícios */
+.items {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1E1E1E; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+}
+
+h3 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.items h3 {
+    margin-top: 0;
+}
+
+#tabela-exercicios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #222; 
+    color: #E0E0E0;
+}
+
+#tabela-exercicios th, #tabela-exercicios td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+#tabela-exercicios th {
+    background-color: #70402d; 
+    color: white;
+}
+
+#tabela-exercicios td button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#tabela-exercicios td button:hover {
+    background-color: #c82333;
+}

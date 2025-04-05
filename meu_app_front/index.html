@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento de Treinos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com banner -->
+    <header>
+        <div class="title">
+            <h1>Gym Tracker</h1>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="imgs/Banner_Treinos.jpeg" alt="Imagem de Treino">
+            </div>
+            <div class="form-container">
+                <p class="descricao-formulario">Adicione seus exercícios abaixo e acompanhe seu progresso!</p>
+                <section class="newItem">
+                    <input type="text" id="nome" placeholder="Nome do Exercício">
+                    <input type="number" id="series" placeholder="Número de Séries">
+                    <input type="number" id="repeticoes" placeholder="Quantidade de Repetições">
+                    <input type="number" id="peso" placeholder="Peso (kg)">
+                    <button onclick="adicionarExercicio()">Adicionar</button>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tabela de exercícios -->
+    <section class="items">
+        <h3>Lista de Exercícios</h3>
+        <table id="tabela-exercicios">
+            <tr>
+                <th>Exercício</th>
+                <th>Séries</th>
+                <th>Repetições</th>
+                <th>Peso (kg)</th>
+                <th>Remover?</th>
+            </tr>
+        </table>
+    </section>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
